@@ -1,1 +1,20 @@
-
+on:
+  push:
+    branches:
+      -staging
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
+      with:
+        server: arbiwhales.com
+        username: arbiwhal
+        password: O3.jn)4o0IwME7
+        server-dir: /public_html/staging.arbiwhales.com/
