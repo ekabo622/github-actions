@@ -17,4 +17,4 @@ jobs:
         server: arbiwhales.com
         username: arbiwhal
         password: O3.jn)4o0IwME7
-        server-dir: /public_html/app.arbiwhales.com/
+        server-dir: /public_html/staging.arbiwhales.com/
